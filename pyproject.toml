@@ -6,6 +6,8 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "flow-package",
+    "matplotlib>=3.10.1",
+    "torch>=2.6.0",
 ]
 
 [dependency-groups]
