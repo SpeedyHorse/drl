@@ -8,6 +8,7 @@ dependencies = [
     "flow-package",
     "ipykernel>=6.29.5",
     "matplotlib>=3.9.4",
+    "stable-baselines3>=2.6.0",
     "torch>=2.6.0",
 ]
 
