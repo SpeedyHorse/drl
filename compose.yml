@@ -1,0 +1,14 @@
+services:
+  python:
+    build: ./docker
+    container_name: python
+    volumes:
+      - .:/app
+      # - ./drl:/app
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
