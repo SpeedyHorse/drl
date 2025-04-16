@@ -8,3 +8,8 @@ convert:
 	mv ./01_multiple.py ./py/01_multiple.py
 	mv ./apelid.py ./py/apelid.py
 	mv ./wgan.py ./py/wgan.py
+
+py_convert:
+	uv tool run p2j ./py/wgan.py -t wgan.ipynb -o
+	uv tool run p2j ./py/apelid.py -t apelid.ipynb -o
+
